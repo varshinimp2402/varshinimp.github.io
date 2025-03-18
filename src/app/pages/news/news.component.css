@@ -1,0 +1,37 @@
+/* Container that holds all polaroids */
+.polaroid-container {
+    display: flex; /* Enables horizontal layout */ 
+    gap: 20px; /* Space between each polaroid */
+    flex-wrap: wrap; /* Ensures responsiveness, moves to next line if needed */
+    padding: 20px;
+}
+
+/* Individual polaroid style */
+.polaroid {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background: white;
+    padding-bottom: 10px;
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Image inside polaroid */
+.polaroid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+}
+
+/* Text container inside polaroid */
+.polaroid .container {
+    padding: 10px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;  /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background: white; /* Your desired background color */
+    background-repeat: repeat;
+}

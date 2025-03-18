@@ -1,0 +1,78 @@
+/* Ensure the html and body cover the full viewport */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* Make sure both html and body take up full height */
+    width: 100%;   /* Ensure full width */
+}
+
+/* Set the background color */
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFDF2;  /* Light beige background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;   
+    width: 100%;     
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1000; /* Ensures navbar stays on top */
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333; /* Darker text for better visibility */
+    font-size: 32px;
+}
+
+/* Flexbox container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.9); /* Solid white with slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth to separate it from the background */
+}
+
+/* Text content */
+.text-section {
+    flex: 1;
+    color: #323232;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.text-section b {
+    font-size: 24px;
+}
+
+.text-section i {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Video section */
+.video-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    
+}

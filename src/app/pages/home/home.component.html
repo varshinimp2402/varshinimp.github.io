@@ -1,0 +1,60 @@
+
+<!--img [src]="imagePath" alt="Home Image"-->
+
+<body>
+    <br><br><br><br>
+    
+    <div class="circle">
+        <img [src]="imagePath" alt="Me">
+    </div>
+    <div class="data_container">
+        <div class="about_data">
+            <button (click)="showSection('info')">Info</button>  
+            <button (click)="showSection('education')">Education</button>
+        </div>
+        <br><br>
+        <div *ngIf="currentSection === 'info'" class="data">
+            <p> Hey there! I'm Varshini Mallikarjuna Prasanna, a passionate Full-Stack Developer with expertise in Python, Java, Angular, and cloud technologies. I thrive on building scalable applications that drive efficiency and innovation.
+
+                Currently, I'm pursuing my Master’s in Computer Science at California State University, Fresno, further deepening my technical prowess. Before this, I honed my skills as a Full-Stack Developer at Accenture, where I worked on diverse projects solving real-world challenges.
+                
+                I’m always excited to explore new technologies, tackle complex algorithmic challenges, and build AI-powered solutions that make a difference.
+                
+                Beyond coding, you'll find me hiking through nature, traveling to new destinations, or expressing creativity through art. Let's connect and create something amazing together!</p>
+        </div>
+        <div *ngIf="currentSection === 'education'" class="data">
+            <h1> My Academic Journey </h1>
+            <div >
+                <div class="education-container">
+                <button class="edu-button">
+                    <div class="edu-image">
+                        <img style="width: 70px ;" src="../../../assets/csu.png">
+                    </div><br>
+                    <div class="edu-text">
+                        <small>May 2025</small><br>
+                        <b>California State University Fresno State</b><br>
+                        <em> MS in Computer Science</em><br>
+                        <i> Teaching Associate under prof David Ruby, Marc Herdman and Amarasinghe Dhanyu</i><br>
+                        <small>Aug 2023</small>
+                    </div>
+                </button>
+                
+                <br>
+                <div class="education-container">
+                <button class="edu-button">
+                    <div class="edu-image">
+                        <img style="width: 100px ;" src="../../../assets/sit_logo.png">
+                    </div>
+                    <div class="edu-text">
+                        <small>May 2020</small><br>
+                        <b>Siddaganga Institute of Technology</b><br>
+                        <em> BE in Information Science and Engineering</em><br>
+                        <small>Aug 2016</small>
+                    </div>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>

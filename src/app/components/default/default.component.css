@@ -1,0 +1,108 @@
+/* Global box-sizing */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
+  
+  /* Reset margin and padding */
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background: url('/assets/Home.png') center/cover no-repeat; /* Apply background to entire page */
+  }
+  
+  /* Navbar */
+  .header {
+    position: fixed; /* Keep navbar fixed */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0); /* Fully transparent background */
+  }
+  
+  /* Logo */
+  .header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: brown; /* Set text color to white for visibility */
+    text-decoration: none;
+    font-family: 'Brush Script MT', cursive;
+  }
+  
+  /* Navbar links */
+  .header-right a {
+    text-decoration: none;
+    color: brown; /* Ensure links are visible on background */
+    font-size: 18px;
+    margin: 0 15px;
+    transition: 0.3s;
+  }
+  
+  .header-right a:hover {
+    color: black;
+  }
+  
+  /* Ensure background image covers entire page */
+  .bg-img {
+    width: 100vw;  
+    min-height: 100vh;
+    display: flex;
+    
+    
+  }
+  
+  /* Intro Section */
+  .Intro {
+    
+    color: #323232; /* Ensure text is visible */
+    max-width: 80%;
+    padding: 250px;
+    padding-top: 200px;
+    border-radius: 10px;
+    
+  }
+  
+  
+  
+  /* Home Buttons */
+  .Home_buttons {
+    margin-top: 20px;
+  }
+  
+  .Home_buttons button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  /* Ensure sections take up full screen height */
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  /* Ensure each section has a distinct background */
+  #about, #projects, #news, #skills, #contact {
+    background-color: #f5f5f5;
+    color: black;
+  }
+  
+  /* Space out sections */
+  section:not(:first-child) {
+    margin-top: 50px;
+  }
+  
